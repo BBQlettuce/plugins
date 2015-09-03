@@ -10,17 +10,26 @@
 
   $.Tabs.prototype.clickTab = function (event) {
     event.preventDefault();
-
-    this.$activeTab.toggleClass("active");
-    this.$el.find("a.active").toggleClass("active");
-
     var $liToActivate = $(event.currentTarget);
-    $liToActivate.toggleClass("active");
-
     var $articleToActivate = this.$contentTabs.find($liToActivate.attr("href"));
-    $articleToActivate.toggleClass("active");
 
-    this.$activeTab = $articleToActivate;
+    this.$activeTab.addClass("transitioning");
+
+    this.$activeTab.one("transitionend", function() {
+      this.$activeTab.removeClass("active");
+      this.$activeTab.removeClass("transitioning");
+      this.$el.find("a.active").removeClass("active");
+
+      $liToActivate.addClass("active");
+      $articleToActivate.addClass("active");
+      $articleToActivate.addClass("transitioning");
+      window.setTimeout(function(){
+        $articleToActivate.removeClass("transitioning");
+      }, 0);
+
+      this.$activeTab = $articleToActivate;
+    }.bind(this));
+
   };
 
   $.fn.tabs = function () {
