@@ -1,0 +1,35 @@
+html, body, ul, li, figure, h1 {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  text-decoration: inherit;
+  text-align: inherit;
+  font: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tabs .active {
+  font-weight: bold;
+}
+
+article {
+  display: none;
+}
+
+article.active {
+  display: block;
+}
