@@ -1,0 +1,66 @@
+html, body, ul, li, figure, h1, a, div {
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  text-decoration: inherit;
+  text-align: inherit;
+  font: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.thumbnails {
+  margin: auto;
+  width: 400px;
+}
+
+.thumbnails .active {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.thumbnails .active img {
+  width: 100%;
+}
+
+.thumbnails .gutter-images {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  float: left;
+  display: block;
+}
+
+.thumbnails .gutter-images img {
+  width:20%;
+  float: left;
+  display: block;
+  cursor: pointer;
+}
+
+.thumbnails .gutter {
+  position: relative;
+}
+
+.thumbnails .gutter .nav {
+  cursor: pointer;
+  width: 5%;
+  background: black;
+  display: block;
+  float: left;
+
+}

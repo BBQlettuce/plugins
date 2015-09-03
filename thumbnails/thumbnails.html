@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Some Thumbnails</title>
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="./thumbnails.js"></script>
+    <link href="./thumbnails.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="thumbnails">
+      <div class="active">
+      </div>
+      <div class="gutter group">
+        <a class="left nav">&lt;</a>
+        <div class="gutter-images group">
+          <img src="https://pbs.twimg.com/profile_images/378800000674268962/06ce58cab26c3a0daf80cf57e5acb29b_400x400.jpeg"/>
+          <img src="https://thenypost.files.wordpress.com/2013/11/corgi.jpg"/>
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Corgi.JPG"/>
+          <img src="http://puppyparadise.com/images/Breeds/eng01.jpg"/>
+          <img src="http://www.pwccwr.org/Images/Riosit.jpg"/>
+          <img src="http://buzzsharer.com/wp-content/uploads/2015/07/cute-puppy-corgi-oscar.jpg"/>
+          <img src="http://tiger.towson.edu/~mmurph23/Term%20Project/miles-the-pembroke-welsh-corgi_65744_2012-05-08_w450.jpg"/>
+          <img src="http://adogbreeds.com/wp-content/uploads/2012/12/Corgi-dog.jpg"/>
+          <img src="http://graphics.stanford.edu/~mdfisher/bin/Reddit/aww/Reddit,%20I%20got%20a%20corgi%20pup%20this%20weekend.%20Have%20not%20named%20him%20yet%20eROXH.jpg"/>
+          <img src="http://seantho2.wordpress.ncsu.edu/files/2015/03/Pembroke-2.jpg"/>
+          <img src="https://s-media-cache-ak0.pinimg.com/236x/0f/a4/e8/0fa4e804e183c7882db427a52f25b400.jpg"/>
+          <img src="http://www.mrwallpaper.com/wallpapers/corgi-puppy-1280x1024.jpg"/>
+          <img src="http://cdn.cutestpaw.com/wp-content/uploads/2012/05/s-Inbred-corgi-is-adorable.jpg"/>
+          <img src="http://ak-hdl.buzzfed.com/static/2014-02/enhanced/webdr06/27/11/enhanced-23386-1393518486-11.jpg"/>
+          <img src="https://justjeany.files.wordpress.com/2014/09/39b7d4be0845f2628aa3f7bc315602d4.jpg"/>
+        </div>
+        <a class="right nav">&gt;</a>
+      </div>
+    </div>
+
+    <script>
+
+    $(document).on("ready", function(){
+      $('.thumbnails').thumbnails();
+    });
+
+    </script>
+  </body>
+</html>
