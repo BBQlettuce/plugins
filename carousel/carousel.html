@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Whole Corgi Carousel</title>
+
+    <script src="../jquery-2.1.4.js"></script>
+    <script src="./carousel.js"></script>
+
+    <link href="./carousel.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <figure class="carousel">
+      <ul class="items group">
+        <li class="active"><img src="http://d21vu35cjx7sd4.cloudfront.net/dims3/MMAH/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=http%3A%2F%2Fs3.amazonaws.com%2Fassets.prod.vetstreet.com%2F83%2F9e8de0a7f411e0a0d50050568d634f%2Ffile%2FPembroke-Welsh-Corgi-3-645mk62711.jpg" alt="A corgi" width="360" height="240"/></li>
+        <li><img src="http://stuffpoint.com/dogs/image/208632-dogs-adorable-corgi-puppies-running-ddddd.jpg" alt="A corgi" width="360" height="240"/></li>
+        <li><img src="http://i.ytimg.com/vi/oVXZTmi2ruI/maxresdefault.jpg" alt="A corgi" width="360" height="240"/></li>
+        <li><img src="http://s3-static-ak.buzzfed.com/static/campaign_images/webdr03/2013/4/25/20/26-things-that-youre-forced-to-wear-when-youre-a--1-6811-1366934965-1_big.jpg" alt="A corgi" width="360" height="240"/></li>
+      </ul>
+
+      <button class="slide-right">Prev</button>
+      <button class="slide-left">Next</button>
+    </figure>
+
+    <script>
+      $(document).on("ready", function(){
+        $('.carousel').carousel();
+      });
+    </script>
+  </body>
+</html>

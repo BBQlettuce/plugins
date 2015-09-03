@@ -1,0 +1,57 @@
+html, body, ul, li, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.carousel {
+  width: 360px;
+  height: 240px;
+  border: 5px solid black;
+  margin: 20px auto;
+}
+
+.carousel ul.items {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel ul.items li {
+  display: none;
+}
+
+.carousel ul.items li.active {
+  position: absolute;
+  display: block;
+  float: left;
+  left: 0%;
+  transition: left 500ms;
+}
+
+.carousel ul.items li.active.right {
+  left: 100%;
+}
+
+.carousel ul.items li.active.left {
+  left: -100%;
+}
